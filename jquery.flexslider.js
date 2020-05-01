@@ -1062,7 +1062,7 @@
                        (slider.maxW < slider.w) ? (slider.w - (slideMargin * (maxItems - 1)))/maxItems :
                        (slider.vars.itemWidth > slider.w) ? slider.w : slider.vars.itemWidth;
         slider.itemWPlusMargin = slider.itemW + slider.itemM;
-        slider.visible = Math.ceil(slider.w / slider.itemWPlusMargin);
+        slider.visible = Math.floor(slider.w / slider.itemWPlusMargin);
         slider.visible = slider.visible > 0 ? slider.visible : 1;
 
         slider.move = (slider.vars.move > 0 && slider.vars.move < slider.visible ) ? slider.vars.move : slider.visible;
