@@ -1037,8 +1037,8 @@
       }
 
       //FlexSlider: init() Callback
-	  slider.vars.init(slider);
-	  slider.doMath();
+      slider.vars.init(slider);
+      slider.doMath();
     };
 
     slider.doMath = function() {
